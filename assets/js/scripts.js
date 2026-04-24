@@ -86,6 +86,20 @@ async function carregarDepois() {
         fade: false,
         watchCSS: true,
     });
+
+    jQuery('.terraza__flickity').flickity({
+        cellAlign: 'left',
+        contain: true,
+        prevNextButtons: false,
+        selectedAttraction: 0.01,
+        friction: 0.15,
+        autoPlay: true,
+        autoPlay: 4000,
+        pageDots: false,
+        imagesLoaded: true,
+        fade: false,
+    });
+
     //HEADROOM
     const nav = document.querySelector('.bd-navbar');
     let lastScrollPosition = window.pageYOffset;
